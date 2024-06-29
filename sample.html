@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Mouse Elements</title>
+    </head>
+    <body>
+        <h1 id="move">Hello</h1>
+
+        <script>
+            /*document.getElementById("move").addEventListener("mousemove",moveone,false);
+            //document.getElementById("move").addEventListener("mouseout",leaveone,false);
+            document.getElementById("move").addEventListener("mouseout",outof);
+            function moveone()
+            {
+               document.getElementById("move").innerHTML="Interested";
+            };
+            function leaveone()
+            {
+               document.getElementById("move").innerHTML="go and ";
+            }
+            function outof()
+            {
+              document.getElementById("move").innerHTML="small one!";
+            }*/
+            
+            //recursion
+            function fact(num)
+            {
+                if(num>=1)
+                return 1;
+                else
+                return num*fact(num-1);
+            }
+            for(var i=0;i<=10;i++)
+            {
+                document.writeln("<h4>Factorial: "+(i)+"is"+fact(i)+"</h4>");
+            }
+        </script>
+    </body>
+</html>

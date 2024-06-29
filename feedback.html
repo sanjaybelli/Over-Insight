@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: rgb(4, 206, 232);
+      background-image: url('imgfeed.jpg');
+      background-repeat: no-repeat; 
+      background-attachment:fixed;
+      background-size:cover;
+    }
+    h1 {
+      color: rgb(222, 12, 12);
+    }
+    form {
+      color:rgb(20, 18, 18);
+    }
+    
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .navbar {
+      background-color: #47768a;
+      color: #f3eded;
+    }
+    .navbar a {
+      color: #e1d7d8;
+    }
+    .navbar a:hover {
+      background-color: #bcc8c4;
+      color: rgb(250, 2, 2);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="webpage.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Login.html">SIGN IN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="About us.html">ABOUT AS</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container mt-5 form-container">
+    <h1 class="text-center">Feedback page</h1>
+    <form>
+      <div class="form-group">
+        <label for="firstname">Name:</label>
+        <input type="text" class="form-control" id="firstname" name="firstname">
+      </div>
+      <div class="form-group">
+        <label for="address">Comments:</label>
+        <textarea class="form-control" id="address" rows="5" name="address"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="email">E-Mail address:</label>
+        <input type="text" class="form-control" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <select class="form-control" id="country" name="country">
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="UK">UK</option>
+          <option value="Australia">Australia</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Things you liked:</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="checkbox1" name="checkbox1" value="site design" checked>
+          <label class="form-check-label" for="checkbox1">site design</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="checkbox2" name="checkbox2" value="links">
+          <label class="form-check-label" for="checkbox2">links</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="checkbox3" name="checkbox3" value="ease of use">
+          <label class="form-check-label" for="checkbox3">ease of use</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="checkbox4" name="checkbox4" value="images">
+          <label class="form-check-label" for="checkbox4">Images</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="rating">Rate your overall experience:</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="rating1" name="rating" value="1">
+          <label class="form-check-label" for="rating1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="rating2" name="rating" value="2">
+          <label class="form-check-label" for="rating2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="rating3" name="rating" value="3">
+          <label class="form-check-label" for="rating3">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="rating4" name="rating" value="4">
+          <label class="form-check-label" for="rating4">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="rating5" name="rating" value="5">
+          <label class="form-check-label" for="rating5">5</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+ 
+</body>
+</html>
